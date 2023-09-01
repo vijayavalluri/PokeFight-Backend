@@ -15,7 +15,7 @@ let jsonData = JSON.parse(await readFile(new URL('./poke.json', import.meta.url)
 const app = express();
 dotenv.config();
 const port = process.env.PORT || 5000;
-//  app.use(cors())
+ app.use(cors())
 // app.use(bodyParser.json());
 
 
